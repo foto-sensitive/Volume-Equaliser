@@ -15,15 +15,21 @@ Equalizer::Equalizer(){
 
   w = 20;
   h = 2;
+  equa.mouseX = 0;
 
 
 }
 
-void Equalizer::draw(int x, int y,  bool verticle){
+void Equalizer::draw(int x, int y){
 
 
     ofSetColor(255);
-    equa.draw(x, y, w, h,verticle);
+
+
+
+    equa.magFinal = 30;
+    equa.spacing = 4;
+    equa.draw(x, y, w, h,false);
 
     ofColor c;
 
@@ -58,7 +64,7 @@ void Equalizer::draw(int x, int y,  bool verticle){
 
 
     ofSetColor(c);
-    ofRect(200,200,50,50);
+    ofRect(0,0,50,50);
 
 
 

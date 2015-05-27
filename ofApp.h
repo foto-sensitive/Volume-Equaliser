@@ -1,6 +1,8 @@
 #pragma once
 
 #include "Equalizer.h"
+#include "Volume.h"
+#include "Sound.h"
 #include "ofMain.h"
 
 class ofApp : public ofBaseApp{
@@ -9,6 +11,8 @@ class ofApp : public ofBaseApp{
 		void setup();
 		void update();
 		void draw();
+
+		string toString(float i);
 
 		void keyPressed(int key);
 		void keyReleased(int key);
@@ -21,7 +25,14 @@ class ofApp : public ofBaseApp{
 		void gotMessage(ofMessage msg);
 
 
-		Equalizer myEquaHori;
-		Equalizer myEquaVert;
+		Equalizer myEqua1;
+		Equalizer myEqua2;
+		Equalizer myEqua3;
+		Volume myVol;
+
+		Sound firstSound;
+
+		bool volOn, getDistOnce;
+		int dist, pmouseX, pmouseY, pVol;
 
 };

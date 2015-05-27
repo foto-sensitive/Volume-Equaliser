@@ -12,7 +12,7 @@ public:
     //Constructor
     Equalizer();
 
-    void draw(int x, int y, bool verticle);
+    void draw(int x, int y);
 
     float peak, thre, threF;
 

@@ -14,7 +14,11 @@ public:
 
     float w, h;
 
-    float mag;
+    float mag, magFinal, spacing;
+
+    float ofConstrain(float amt, float low, float high);
+
+    int mouseX;
 
 
 

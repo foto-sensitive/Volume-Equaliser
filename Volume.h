@@ -1,24 +1,28 @@
 
 
-#ifndef emptyExample_Equa_h
-#define emptyExample_Equa_h
+#ifndef emptyExample_Volume_h
+#define emptyExample_Volume_h
+
+#include "Equa.h"
 #include "ofMain.h"
 
-class Equa {
+class Volume {
 public:
 
     //Constructor
-    Equa();
+    Volume();
 
-    void draw(int x, int y, bool verticle);
+    void draw(int x, int y);
 
-    float w;
+    string toString(float i);
 
-    float mag;
+    int w, h;
 
+    ofColor c;
 
+    float perc;
 
-
+    Equa equa;
 
 };
 
